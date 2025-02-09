@@ -1,0 +1,29 @@
+    1  git config --global user.name "Nick Nick"
+    2  git config --global user.email "privat12.91@gmail.com"
+    3  git config --global user.name "Nick Nick"
+    4  git congig --list
+    5  git config --list
+    6  git clone https://github.com/Nicknick9799/HW_10.git
+    7  cd HW_10
+    8  touch text_ignore.txt
+    9  git status
+   10  git add "text_ignore.txt" >> .gitignore
+   11  git status
+   12  git commit -m "Added Text_ignore.txt to .gitignore"
+   13  touch main_test.txt
+   14  git add .
+   15  git commit -m "Aded main.test.txt"
+   16  git branch develop
+   17  git checkout develop
+   18  touch develop_test.txt
+   19  git add .
+   20  git commit -m "Added develop_test.txt"
+   21  git add "just a small change" >> develop_test.txt
+   22  nano develop-test.txt
+   23  git status
+   24  git add .
+   25  git commit -m "Updated develop_test.txt"
+   26  git checkout main
+   27  git merge develop
+   28  git log
+   29  history > command_list.csv
